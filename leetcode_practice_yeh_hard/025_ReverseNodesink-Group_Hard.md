@@ -5,7 +5,7 @@
 
   
 
-#####***Problem:***
+##### ***Problem:***
 
     Given a linked list, 
     reverse the nodes of a linked list k at a time
@@ -22,7 +22,7 @@
     
     Only constant memory is allowed.
 
-#####***Example:***
+##### ***Example:***
 
     Input: 1->2->3->4->5, 2
         Output: 2->1->4->3->5
