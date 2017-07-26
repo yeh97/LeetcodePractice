@@ -1,14 +1,11 @@
 ### AlgorithmPractice
-<br>
+
 #### [leetcode_practice](https://leetcode.com/)
-<br>
-<br>
+
 ##### ***Author: yeh***
-<br>
-<br>
-<br>
+
 ###### ***Solved Problem Table***
-<br>
+
 |   #|Title|Difficulty|TAG|GitLink|
 |----:|:----:|----:|----:|:----:|
 |1|[Two Sum](https://leetcode.com/problems/two-sum)|Easy|Array, Hash_Table|[TO](https://github.com/yeh97/LeetcodePractice/blob/master/leetcode_practice_yeh_easy/001_TwoSum_Easy.md)|
