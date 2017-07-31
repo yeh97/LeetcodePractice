@@ -71,7 +71,7 @@ public class Solution {
         char[] chsp = new char[p.length()];
         int length = chsp.length;
         //convert "**" to "*"
-        //similar to KMP
+        //similar to strstr()
         //split by '*', use KMP match every part
         for (int i = chsp.length - 1; i >= 0; i--) {
             chsp[--length] = p.charAt(i);
