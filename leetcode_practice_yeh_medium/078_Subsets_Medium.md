@@ -29,7 +29,7 @@
 public class Solution {
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> ret = new ArrayList<List<Integer>>();
-        if (nums == null || nums.length == 0) return ret;
+        if (nums == null) return ret;
         //empty set is subset of any set
         List<Integer> newSubSet = new ArrayList<Integer>();
         ret.add(newSubSet);
