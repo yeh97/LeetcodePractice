@@ -51,4 +51,42 @@ class Solution {
 
 ```
 
+##### *Method #2*
+``` java
+/*
+ *Author: yeh
+ *Time: 2017_08_26
+ *Language: Java
+ *
+ */
+
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public List<Integer> preorderTraversal(TreeNode root) {
+        List<Integer> list = new ArrayList<Integer>();
+        if (root == null) return list;
+        Stack<TreeNode> t = new Stack<TreeNode>();
+        TreeNode cur = null;
+        t.push(root);
+        while (!t.isEmpty()) {
+            // N -> L -> R
+            cur = (TreeNode) t.pop();
+            list.add(cur.val);
+            // push : R L
+            if (cur.right != null) t.push(cur.right);
+            if (cur.left != null) t.push(cur.left);
+        }
+        return list;
+    }
+}
+
+```
 
