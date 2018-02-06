@@ -115,7 +115,7 @@ class Solution {
         // dp[i][j] : min hp from (i, j) to (m - 1, n - 1), >= 1
         // i)  if dungeon[i][j] <= 0, dp[i][j] > -dungeon[i][j]
         //     else dp[i][j] >= 1
-        // ii) dp[i][j] > min(dp[i + 1][j], dp[i][j + 1])
+        // ii) dp[i][j] >= min(dp[i + 1][j], dp[i][j + 1])
         int[][] dp = new int[m][n];
         dp[m - 1][n - 1] = 1 - Math.min(dungeon[m - 1][n - 1], 0);
         for (int i = m - 2; i >= 0; i--) {
