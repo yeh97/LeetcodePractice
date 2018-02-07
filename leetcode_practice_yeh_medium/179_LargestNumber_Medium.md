@@ -35,13 +35,14 @@ class Solution {
         }
         @Override
         public int compareTo(Data t) {
+            // sorted big -> small
             long num1 = ((long) d) * t.n + t.d;
             long num2 = ((long) t.d) * n + d;
-            // sorted big -> small
             return num1 > num2 ? -1 : 1;
         }
     }
     public String largestNumber(int[] nums) {
+        // 2018/2/6 : 108ms
         // string a, b, sort it by a + b > b + a
         if (nums == null || nums.length == 0) return "";
         Data[] data = new Data[nums.length];
